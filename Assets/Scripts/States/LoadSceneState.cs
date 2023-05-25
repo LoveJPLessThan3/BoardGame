@@ -22,6 +22,7 @@ public class LoadSceneState : MonoBehaviour, IState
 
     private void CreateObjects()
     {
+        _gameFactory.CreatePoints();
         _gameFactory.CreatePerson();
     }
 
