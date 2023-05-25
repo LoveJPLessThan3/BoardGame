@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4841436170955740364}
   - component: {fileID: 6531476128118780927}
   - component: {fileID: 6276074171399151112}
+  - component: {fileID: -6916571723923227861}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -110,3 +111,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _points: {fileID: 6531476128118780927}
+--- !u!195 &-6916571723923227861
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4841436170955740366}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

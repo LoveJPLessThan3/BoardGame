@@ -1,0 +1,1078 @@
+fileFormatVersion: 2
+guid: 3f93da89a6a1f0e4197b427e1adc12fe
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: 613701424701163714
+    second: Terrain|Clouds|Take 001|BaseLayer
+  - first:
+      74: -4964743379032964840
+    second: Terrain|Terrain|Take 001|BaseLayer
+  - first:
+      74: 1264693770739394202
+    second: Terrain|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: 4834092917797109835
+    second: Terrain|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: -8317808031555042725
+    second: Terrain|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: -4032893120564681766
+    second: Terrain|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: 311915837171739533
+    second: Terrain|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: -6966455265584498454
+    second: Terrain|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: 4148712892554533276
+    second: Terrain|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: 462999183290641874
+    second: Terrain|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: 6781500315970807818
+    second: Terrain|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: 7314090276525972586
+    second: Terrain|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: -172531547207161611
+    second: Terrain|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: 8555389650962153892
+    second: Terrain|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: 4992560186060630201
+    second: Terrain|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: -8638166187142973292
+    second: Terrain|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: -991610893979243089
+    second: Terrain|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: 9211459006776741770
+    second: Terrain|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: 1653383398149418424
+    second: Clouds|Clouds|Take 001|BaseLayer
+  - first:
+      74: 1067351604561453861
+    second: Clouds|Terrain|Take 001|BaseLayer
+  - first:
+      74: 6473504968912911053
+    second: Clouds|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: -2586397137056353777
+    second: Clouds|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: -7842912980884708610
+    second: Clouds|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: 8257812520853721097
+    second: Clouds|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: 1579528521732019724
+    second: Clouds|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: 7844445798883823245
+    second: Clouds|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: -2335563558476849258
+    second: Clouds|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: -8903290925879528558
+    second: Clouds|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: -7499076511524148804
+    second: Clouds|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: 2007766203349093312
+    second: Clouds|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: -6179458514235421379
+    second: Clouds|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: -4891373288407305621
+    second: Clouds|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: -1711406323253507095
+    second: Clouds|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: -7131696981724448953
+    second: Clouds|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: -6208621123005756658
+    second: Clouds|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: -6156565520785716892
+    second: Clouds|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: 3837253562326718467
+    second: Road|Clouds|Take 001|BaseLayer
+  - first:
+      74: -642611215904110820
+    second: Road|Terrain|Take 001|BaseLayer
+  - first:
+      74: 7419381710747222561
+    second: Road|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: 6353843497543841034
+    second: Road|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: -378692893276908579
+    second: Road|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: 409948838927342129
+    second: Road|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: -5190522030825668652
+    second: Road|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: -6338714821769398226
+    second: Road|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: -1047156884328100818
+    second: Road|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: 4277177980555589622
+    second: Road|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: -511890451265360866
+    second: Road|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: 5172440500384718429
+    second: Road|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: 7588471673013770367
+    second: Road|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: 5596527686638074410
+    second: Road|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: 591465599918324358
+    second: Road|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: 6028715451273541234
+    second: Road|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: 8447784891946360446
+    second: Road|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: -7021645232708412099
+    second: Road|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: -408581213993730067
+    second: Terrain.001|Clouds|Take 001|BaseLayer
+  - first:
+      74: 571515661785875659
+    second: Terrain.001|Terrain|Take 001|BaseLayer
+  - first:
+      74: -8894314480795893297
+    second: Terrain.001|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: -4575686964854040319
+    second: Terrain.001|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 5621224408580888002
+    second: Terrain.001|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: -3691826085114442669
+    second: Terrain.001|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: -4794235762000148928
+    second: Terrain.001|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: -4124883320675578273
+    second: Terrain.001|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: -8247993130957207643
+    second: Terrain.001|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: -4039112873703805035
+    second: Terrain.001|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: -9061028706526523205
+    second: Terrain.001|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: -2234000347841148242
+    second: Terrain.001|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: 2588794611448803550
+    second: Terrain.001|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: -7944742425203911633
+    second: Terrain.001|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: 2367132220673039572
+    second: Terrain.001|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: 3240171772782171357
+    second: Terrain.001|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: 5461589534554603765
+    second: Terrain.001|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: 8446423931352969262
+    second: Terrain.001|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: 7516036341294379322
+    second: Terrain.002|Clouds|Take 001|BaseLayer
+  - first:
+      74: 4145252897064502485
+    second: Terrain.002|Terrain|Take 001|BaseLayer
+  - first:
+      74: 7797335006051305607
+    second: Terrain.002|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: 4412437883078120226
+    second: Terrain.002|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 2743470311270800445
+    second: Terrain.002|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: 923583481272137521
+    second: Terrain.002|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: 8739615982519543735
+    second: Terrain.002|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: -1730460119018882549
+    second: Terrain.002|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: 3036082803284341569
+    second: Terrain.002|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: -7775363687432967037
+    second: Terrain.002|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: 7913890059659098091
+    second: Terrain.002|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: -5263033771375956974
+    second: Terrain.002|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: -3956531827824686604
+    second: Terrain.002|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: -3378197149370647823
+    second: Terrain.002|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: -1114881806735278775
+    second: Terrain.002|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: -3307413149494421467
+    second: Terrain.002|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: 3805978110269153828
+    second: Terrain.002|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: 1151667815443838580
+    second: Terrain.002|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: -5652320459794443521
+    second: Terrain.003|Clouds|Take 001|BaseLayer
+  - first:
+      74: 2262575567875167065
+    second: Terrain.003|Terrain|Take 001|BaseLayer
+  - first:
+      74: -7364096208938773311
+    second: Terrain.003|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: -8515072369270956968
+    second: Terrain.003|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 1316598956239842721
+    second: Terrain.003|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: -9083344353338575588
+    second: Terrain.003|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: 6486641907658974019
+    second: Terrain.003|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: -8638365084419965180
+    second: Terrain.003|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: -2521539569376176837
+    second: Terrain.003|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: 8334986644035198727
+    second: Terrain.003|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: -2672709213982520095
+    second: Terrain.003|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: 2250999752603327595
+    second: Terrain.003|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: 8473839649448033979
+    second: Terrain.003|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: -8198197164052358258
+    second: Terrain.003|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: 3465688547533410361
+    second: Terrain.003|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: -9209234195793709516
+    second: Terrain.003|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: -5651658418330806773
+    second: Terrain.003|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: 630960401307969435
+    second: Terrain.003|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: 7933508717565291417
+    second: Terrain.004|Clouds|Take 001|BaseLayer
+  - first:
+      74: -9198855092784420939
+    second: Terrain.004|Terrain|Take 001|BaseLayer
+  - first:
+      74: 3466723387219704974
+    second: Terrain.004|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: -6380794140225968542
+    second: Terrain.004|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 432242364306947207
+    second: Terrain.004|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: 9025867594781529140
+    second: Terrain.004|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: -4863296700626279547
+    second: Terrain.004|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: 3357310416904600133
+    second: Terrain.004|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: -5434523224222666920
+    second: Terrain.004|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: -3206330072251258037
+    second: Terrain.004|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: 7590821246657944156
+    second: Terrain.004|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: 5667607861448739295
+    second: Terrain.004|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: -7783041718072182687
+    second: Terrain.004|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: -8452622590759716125
+    second: Terrain.004|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: 3271652908550640812
+    second: Terrain.004|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: -1085544586941182085
+    second: Terrain.004|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: 1410567363865897018
+    second: Terrain.004|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: 1551390122545597242
+    second: Terrain.004|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: 2607540319118551125
+    second: Terrain.005|Clouds|Take 001|BaseLayer
+  - first:
+      74: -1009212050470887245
+    second: Terrain.005|Terrain|Take 001|BaseLayer
+  - first:
+      74: -5791147803515111003
+    second: Terrain.005|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: -9067914807231446915
+    second: Terrain.005|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 1574528892615328532
+    second: Terrain.005|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: 6020194368061325009
+    second: Terrain.005|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: -5509974644802820851
+    second: Terrain.005|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: 8256017138635316312
+    second: Terrain.005|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: 4294947171687719972
+    second: Terrain.005|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: -8257702881661516710
+    second: Terrain.005|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: -8746839805308009272
+    second: Terrain.005|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: 1214149487729156045
+    second: Terrain.005|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: -2577948276912219129
+    second: Terrain.005|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: 3962554169178141902
+    second: Terrain.005|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: 4245966871804641093
+    second: Terrain.005|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: 1276490155258389297
+    second: Terrain.005|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: 8358765634510643079
+    second: Terrain.005|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: -1626019955146161051
+    second: Terrain.005|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: 3244619782234022076
+    second: Terrain.006|Clouds|Take 001|BaseLayer
+  - first:
+      74: 1237033950730367174
+    second: Terrain.006|Terrain|Take 001|BaseLayer
+  - first:
+      74: -7556067665601891496
+    second: Terrain.006|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: 3503322976014672409
+    second: Terrain.006|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 5992234690820615038
+    second: Terrain.006|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: -5793598661360700853
+    second: Terrain.006|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: -2127818778812891711
+    second: Terrain.006|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: 517730361885685075
+    second: Terrain.006|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: -5115945896144992441
+    second: Terrain.006|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: 1512602406891702489
+    second: Terrain.006|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: 3086258313216505765
+    second: Terrain.006|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: -2253433264579435955
+    second: Terrain.006|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: 2853721183455656123
+    second: Terrain.006|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: 1856551031003448688
+    second: Terrain.006|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: -1414655214058371597
+    second: Terrain.006|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: 2115641612361994174
+    second: Terrain.006|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: 9090144925343028759
+    second: Terrain.006|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: 4434756161074542442
+    second: Terrain.006|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: 3528895737080234883
+    second: Terrain.009|Clouds|Take 001|BaseLayer
+  - first:
+      74: 8257525434923370290
+    second: Terrain.009|Terrain|Take 001|BaseLayer
+  - first:
+      74: -3951514091710245207
+    second: Terrain.009|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: 1492009390529521406
+    second: Terrain.009|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 7368759085745547491
+    second: Terrain.009|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: 9075821442119395465
+    second: Terrain.009|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: -8692262309799441984
+    second: Terrain.009|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: -6365588946686173655
+    second: Terrain.009|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: 2383710743032855504
+    second: Terrain.009|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: 524582973250562249
+    second: Terrain.009|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: -9200560609007092927
+    second: Terrain.009|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: 1945867103267412766
+    second: Terrain.009|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: 9078811543147937953
+    second: Terrain.009|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: 78224831172477312
+    second: Terrain.009|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: 1690461133116458753
+    second: Terrain.009|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: 682371323722942143
+    second: Terrain.009|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: 3815719757646165902
+    second: Terrain.009|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: 4119446876212921093
+    second: Terrain.009|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: -8881631224163347684
+    second: Terrain.010|Clouds|Take 001|BaseLayer
+  - first:
+      74: -7062733453033401359
+    second: Terrain.010|Terrain|Take 001|BaseLayer
+  - first:
+      74: 6630032343754557904
+    second: Terrain.010|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: 1716649412649496481
+    second: Terrain.010|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 6395530299518918609
+    second: Terrain.010|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: -8165051095678867367
+    second: Terrain.010|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: -1728509143114540104
+    second: Terrain.010|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: -7717336581379442504
+    second: Terrain.010|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: -1645997110959507563
+    second: Terrain.010|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: -6127228910397257426
+    second: Terrain.010|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: -8766793872560782491
+    second: Terrain.010|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: -633953346110975814
+    second: Terrain.010|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: -3094910193208848414
+    second: Terrain.010|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: -8976742541946588030
+    second: Terrain.010|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: 1134050515437088926
+    second: Terrain.010|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: -7929796644945791886
+    second: Terrain.010|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: 2127639628066551782
+    second: Terrain.010|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: -218992660709515248
+    second: Terrain.010|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: 4671888174430818604
+    second: Terrain.011|Clouds|Take 001|BaseLayer
+  - first:
+      74: -3855826016051022171
+    second: Terrain.011|Terrain|Take 001|BaseLayer
+  - first:
+      74: 1350436409506880444
+    second: Terrain.011|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: 3727510645488619403
+    second: Terrain.011|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 3459900215043208338
+    second: Terrain.011|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: 1727965735168394700
+    second: Terrain.011|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: -7615487062055872242
+    second: Terrain.011|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: -1661831067743873235
+    second: Terrain.011|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: -7773149183080623661
+    second: Terrain.011|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: 4810053563825725505
+    second: Terrain.011|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: -2257807702200628175
+    second: Terrain.011|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: -3563827187298606033
+    second: Terrain.011|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: 5933505660776723928
+    second: Terrain.011|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: -5086932172219628534
+    second: Terrain.011|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: -2695563911268249685
+    second: Terrain.011|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: 7709413368092909885
+    second: Terrain.011|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: -6162820767317747349
+    second: Terrain.011|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: -7114026993210512769
+    second: Terrain.011|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: 7082043882412247237
+    second: Terrain.012|Clouds|Take 001|BaseLayer
+  - first:
+      74: 6769973908108817026
+    second: Terrain.012|Terrain|Take 001|BaseLayer
+  - first:
+      74: -4850326360795212428
+    second: Terrain.012|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: 8667507658491978180
+    second: Terrain.012|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: -648688577606402880
+    second: Terrain.012|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: -495313508530131523
+    second: Terrain.012|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: 6451671146802106561
+    second: Terrain.012|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: 1409609716857807941
+    second: Terrain.012|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: 3955982447153286438
+    second: Terrain.012|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: -1420216785523715494
+    second: Terrain.012|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: -5294742554370973272
+    second: Terrain.012|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: -4740830208482427869
+    second: Terrain.012|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: -1891143761000667559
+    second: Terrain.012|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: -7690233861185442750
+    second: Terrain.012|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: -408493311431452766
+    second: Terrain.012|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: -6799674461066014370
+    second: Terrain.012|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: -8867519158001040963
+    second: Terrain.012|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: 1475347920163560648
+    second: Terrain.012|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: -7288298754713362495
+    second: Terrain.013|Clouds|Take 001|BaseLayer
+  - first:
+      74: 901577464517980196
+    second: Terrain.013|Terrain|Take 001|BaseLayer
+  - first:
+      74: -4269253287824994318
+    second: Terrain.013|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: -9032105211905080972
+    second: Terrain.013|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 5533539425085819230
+    second: Terrain.013|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: -7450274892504178627
+    second: Terrain.013|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: 4615309796398611841
+    second: Terrain.013|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: 3845551324585058283
+    second: Terrain.013|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: 6895372416981142046
+    second: Terrain.013|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: 2374799490465701346
+    second: Terrain.013|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: 5733501162262873296
+    second: Terrain.013|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: 7829941312145931193
+    second: Terrain.013|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: 4363083999583649986
+    second: Terrain.013|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: -4942577872489458376
+    second: Terrain.013|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: 3634084246149345686
+    second: Terrain.013|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: -5216698957528098501
+    second: Terrain.013|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: 2503358647956623381
+    second: Terrain.013|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: -3028658301334657253
+    second: Terrain.013|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: 1467027038375373834
+    second: Terrain.014|Clouds|Take 001|BaseLayer
+  - first:
+      74: 4639064331224267910
+    second: Terrain.014|Terrain|Take 001|BaseLayer
+  - first:
+      74: 2623043792158338659
+    second: Terrain.014|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: -1183657171203961720
+    second: Terrain.014|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: -4522084018057623071
+    second: Terrain.014|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: 758279908186513229
+    second: Terrain.014|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: 6185490435294374079
+    second: Terrain.014|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: 825564224360757306
+    second: Terrain.014|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: -6015220634221731523
+    second: Terrain.014|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: -3324248727221565454
+    second: Terrain.014|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: 7987556311256192279
+    second: Terrain.014|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: 6724101042152694509
+    second: Terrain.014|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: 8106112058749751345
+    second: Terrain.014|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: -7300315651952271912
+    second: Terrain.014|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: -5917750996175886958
+    second: Terrain.014|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: 4601050597353775149
+    second: Terrain.014|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: -8020699626851343123
+    second: Terrain.014|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: -1017231171325840891
+    second: Terrain.014|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: 3772603577942077491
+    second: Rock1|Clouds|Take 001|BaseLayer
+  - first:
+      74: 1690607495109219566
+    second: Rock1|Terrain|Take 001|BaseLayer
+  - first:
+      74: -8359032908736914839
+    second: Rock1|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: 3066477349909915277
+    second: Rock1|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 2975985974254572003
+    second: Rock1|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: -5395629835333610849
+    second: Rock1|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: 6951518587908094060
+    second: Rock1|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: -371092281392699571
+    second: Rock1|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: 7958673434405890730
+    second: Rock1|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: 7849863305264641903
+    second: Rock1|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: -8925211489497223150
+    second: Rock1|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: 4787987583814673489
+    second: Rock1|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: 3725689634029095402
+    second: Rock1|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: 7008193564139901813
+    second: Rock1|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: -1510995758513824791
+    second: Rock1|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: -7957326130432761730
+    second: Rock1|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: 1669212921658056722
+    second: Rock1|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: -6641181272120092234
+    second: Rock1|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: 8930461527417611038
+    second: Rock2|Clouds|Take 001|BaseLayer
+  - first:
+      74: -3703667404245536726
+    second: Rock2|Terrain|Take 001|BaseLayer
+  - first:
+      74: -4981025615718103244
+    second: Rock2|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: -4414497824221123550
+    second: Rock2|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 508572377216189333
+    second: Rock2|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: -5827466794373434474
+    second: Rock2|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: -7423162927937658278
+    second: Rock2|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: -6239291265147283432
+    second: Rock2|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: 286643029038688730
+    second: Rock2|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: 7002717635352711554
+    second: Rock2|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: 1737057965593118329
+    second: Rock2|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: 2144079109006527132
+    second: Rock2|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: 5926631325892891228
+    second: Rock2|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: 2314894243013524482
+    second: Rock2|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: -4740490603246856409
+    second: Rock2|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: -3937838285401961403
+    second: Rock2|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: 4127087539688733244
+    second: Rock2|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: 5141940362582692322
+    second: Rock2|Terrain|Take 001|BaseLayer.018
+  - first:
+      74: -8125934861978011817
+    second: Rock3|Clouds|Take 001|BaseLayer
+  - first:
+      74: 9026123629207632227
+    second: Rock3|Terrain|Take 001|BaseLayer
+  - first:
+      74: 8973588565912550086
+    second: Rock3|Terrain|Take 001|BaseLayer.001
+  - first:
+      74: 7149095735568128634
+    second: Rock3|Terrain|Take 001|BaseLayer.002
+  - first:
+      74: 4876260833731480316
+    second: Rock3|Terrain|Take 001|BaseLayer.003
+  - first:
+      74: -1887689414561387519
+    second: Rock3|Terrain|Take 001|BaseLayer.004
+  - first:
+      74: -727040482885026815
+    second: Rock3|Terrain|Take 001|BaseLayer.005
+  - first:
+      74: -374367022846675689
+    second: Rock3|Terrain|Take 001|BaseLayer.006
+  - first:
+      74: -5663308354857409253
+    second: Rock3|Terrain|Take 001|BaseLayer.007
+  - first:
+      74: 4345640481529100353
+    second: Rock3|Terrain|Take 001|BaseLayer.008
+  - first:
+      74: 5290925860221238249
+    second: Rock3|Terrain|Take 001|BaseLayer.009
+  - first:
+      74: -4635936654694857936
+    second: Rock3|Terrain|Take 001|BaseLayer.010
+  - first:
+      74: 98114019784509215
+    second: Rock3|Terrain|Take 001|BaseLayer.013
+  - first:
+      74: 5935576430189427860
+    second: Rock3|Terrain|Take 001|BaseLayer.014
+  - first:
+      74: 2742936744401941706
+    second: Rock3|Terrain|Take 001|BaseLayer.015
+  - first:
+      74: 1605146171679993947
+    second: Rock3|Terrain|Take 001|BaseLayer.016
+  - first:
+      74: -3977624003961133883
+    second: Rock3|Terrain|Take 001|BaseLayer.017
+  - first:
+      74: 6077281996908924510
+    second: Rock3|Terrain|Take 001|BaseLayer.018
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
