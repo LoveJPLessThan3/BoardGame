@@ -1,37 +1,51 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using UnityEngine;
+using UnityEngine.AI;
 
+[RequireComponent(typeof(GetPoints))]
 public class PersonMove : MonoBehaviour
 {
     [SerializeField]
     private GetPoints _points;
 
-    private List<Transform> _listPoints;
-    private bool isMove;
-    private int moveTo;
+    private NavMeshAgent _agent;
+    private bool _isMove;
+    private Transform _pointAchive;
+
 
     private void Awake()
     {
+        _agent = GetComponent<NavMeshAgent>();
         _points = gameObject.GetComponent<GetPoints>();
-        _listPoints = _points.StartPoint.GetComponent<PointsList>().listPoints;
-        RollCube.NumberOfMoves += MoveToPoint;
+
+        //Варп нужен, чтобы навмеш смог подвязаться, иначе кидал эксепшен
+        _agent.Warp(_points.StartPoint.transform.position);
+
     }
 
     private void Update()
     {
-        if (isMove)
+        if (_isMove)
         {
-            gameObject.transform.position = _listPoints[moveTo].transform.position;
-            isMove = false;
+            _agent.SetDestination(_pointAchive.position);
         }
+
     }
 
-    private int MoveToPoint(int rollCubeResult)
+
+
+    //private float DistanceToPoint()
+    //{
+    //    return Vector3.Distance(_listPoints[_moveTo].position, gameObject.transform.position);
+    //}
+
+
+    public Transform Move(Transform nextPoint)
     {
-        isMove = true;
-        moveTo = rollCubeResult;
-        return moveTo;
+        _isMove = true;
+        return _pointAchive = nextPoint;
     }
-
 }

@@ -1,11 +1,14 @@
-﻿using Unity.VisualScripting;
+﻿using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LoadSceneState : MonoBehaviour, IState
 {
+
     private readonly StateMachine _stateMachine;
     private readonly SceneLoader _sceneLoader;
     private readonly IGameFactoryService _gameFactory;
+
 
     public LoadSceneState(StateMachine stateMachine, SceneLoader sceneLoader, IGameFactoryService gameFactory)
     {
@@ -23,7 +26,7 @@ public class LoadSceneState : MonoBehaviour, IState
     private void CreateObjects()
     {
         _gameFactory.CreatePoints();
-        _gameFactory.CreatePerson();
+        _gameFactory.CreatePlayers(2);
     }
 
     public void Exit()

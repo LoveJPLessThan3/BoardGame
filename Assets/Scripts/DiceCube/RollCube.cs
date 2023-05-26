@@ -4,9 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
 
+//Переделать
 public class RollCube : MonoBehaviour
 {
-    public static event Func<int,int> NumberOfMoves;
+    //public static event Func<int,int> NumberOfMoves;
 
     private static RollCube _instantiate;
     private Random random = new Random();
@@ -16,21 +17,12 @@ public class RollCube : MonoBehaviour
         Instance();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log(ThrowCube());
-            NumberOfMoves?.Invoke(ThrowCube());
-        }
-    }
 
     public static RollCube Instance() 
         => _instantiate ?? (_instantiate = new RollCube());
 
-    private int ThrowCube() =>
+    public int ThrowCube() => 
         random.RandomInt(1, 6);
-
 }
 
 

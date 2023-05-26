@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - StartPoint
+  - RedPoint
+  - GreenPoint
+  - Players
   layers:
   - Default
   - TransparentFX

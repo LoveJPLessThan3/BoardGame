@@ -8,6 +8,7 @@ public class GetPoints : MonoBehaviour
     public void Awake()
     {
         StartPoint = GameObject.FindGameObjectWithTag("StartPoint");
-        transform.position = StartPoint.transform.position;
+        var position = new Vector3(StartPoint.transform.position.x, StartPoint.transform.position.y, StartPoint.transform.position.z);
+        transform.position = position;
     }
 }

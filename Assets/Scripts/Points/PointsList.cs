@@ -5,21 +5,13 @@ using System.Linq;
 
 public class PointsList : MonoBehaviour
 {
-    public List<Transform> listPoints { get; private set; } 
-    private void Awake()
-    {
-        InitialPointsList();
-    }
+    public List<Transform> listPoints { get; private set; }
 
-    private void InitialPointsList()
+    public void InitialPointsList()
     {
         listPoints = new List<Transform>();
 
         foreach (Transform item in gameObject.transform.GetComponentInChildren<Transform>())
             listPoints.Add(item);
-
-
-        Debug.Log(listPoints[2]);
-       // listPoints.Sort();
     }
 }
