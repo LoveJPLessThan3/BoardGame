@@ -8,6 +8,8 @@ using UnityEngine.AI;
 [RequireComponent(typeof(GetPoints))]
 public class PersonMove : MonoBehaviour
 {
+    public bool ReachedPoint { get; set; }
+
     [SerializeField]
     private GetPoints _points;
 
@@ -28,24 +30,32 @@ public class PersonMove : MonoBehaviour
 
     private void Update()
     {
-        if (_isMove)
+        if(_pointAchive != null)
         {
             _agent.SetDestination(_pointAchive.position);
+            ReachedPoint = DistanceToPoint();
         }
-
     }
-
-
-
-    //private float DistanceToPoint()
-    //{
-    //    return Vector3.Distance(_listPoints[_moveTo].position, gameObject.transform.position);
-    //}
-
 
     public Transform Move(Transform nextPoint)
     {
-        _isMove = true;
         return _pointAchive = nextPoint;
+    }
+    public bool DistanceToPoint()
+    {
+        //return Vector3.Distance(_pointAchive.position, gameObject.transform.position) < 0.5f;
+        if (!_agent.pathPending)
+        {
+            if (_agent.remainingDistance <= _agent.stoppingDistance)
+            {
+
+                if (!_agent.hasPath || _agent.velocity.sqrMagnitude == 0f)
+                {
+                    _agent.ResetPath();
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
