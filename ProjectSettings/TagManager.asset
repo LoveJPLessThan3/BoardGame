@@ -8,6 +8,8 @@ TagManager:
   - RedPoint
   - GreenPoint
   - Players
+  - Finish Point
+  - FinishPoint
   layers:
   - Default
   - TransparentFX
