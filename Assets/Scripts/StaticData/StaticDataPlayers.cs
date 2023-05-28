@@ -5,9 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "StaticData/PlayerStaticData", menuName = "PlayerStaticData")]
 public class StaticDataPlayers : ScriptableObject
 {
-    [Range(1, 4)]
-    public int id;
+    public Players playerId;
 
     public string Name;
     public Sprite Icon;
+    public GameObject Prefab;
 }

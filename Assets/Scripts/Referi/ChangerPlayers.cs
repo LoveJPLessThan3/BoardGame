@@ -10,11 +10,16 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 [RequireComponent(typeof(PlayersManager))]
 public class ChangerPlayers : MonoBehaviour
 {
+
+    public static event Action<StaticDataPlayers> PlayerIsActive;
+
     private const string RedPointTag = "RedPoint";
     private const string GreenPointTag = "GreenPoint";
+
     [SerializeField]
     private GameObject _pointsList;
     private PlayersManager _playersManager;
+    private IStaticDataService _staticDataPlayer;
 
     private Dictionary<GameObject, Transform> _statusPlayer = new Dictionary<GameObject, Transform>();
     private List<int> _plyerPointPlace = new List<int>();
@@ -25,15 +30,14 @@ public class ChangerPlayers : MonoBehaviour
     private int _activePlayer;
     private bool _goPoint;
 
-    //Внедряем явную зависимость.
-
-    private void Update()
+    private void Awake()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !_goPoint)
-        {
-            _goPoint = true;
-            ThrowGameCube();
-        }
+        _staticDataPlayer = ServiceLocator.Instantiate.GetService<IStaticDataService>();
+        WalkerContainer.SaidThrowGameCubeForReferee += ThrowGameCube;
+    }
+
+    private void LateUpdate()
+    {
         if (!_playerHash)
             return;
         else
@@ -42,6 +46,7 @@ public class ChangerPlayers : MonoBehaviour
             {
                 if (_goPoint)
                 {
+
                     if (_tag.Equals(RedPointTag))
                         RedPoint(_activePlayer);
                     else if (_tag.Equals(GreenPointTag))
@@ -49,15 +54,15 @@ public class ChangerPlayers : MonoBehaviour
                     else if (_tag.Equals("FinishPoint"))
                         FinishPoint(_activePlayer);
                     else NeutralPoint();
+
                 }
             }
         }
     }
 
-
-
     private void ThrowGameCube()
     {
+        _goPoint = true;
         OrderToWalk(RollCube.Instance().ThrowCube(), _activePlayer);
     }
 
@@ -101,17 +106,18 @@ public class ChangerPlayers : MonoBehaviour
         MoveNextPoint(throwResult, player);
 
         //Кэшируем плээера, чтобы затем взять у него свойство достижения клетки
-        _playerHash = _statusPlayer.ElementAt(player).Key.GetComponent<PersonMove>();
-        _playerHash.ReachedPoint = false; //переделать
+        
     }
 
     private void MoveNextPoint(int throwResult, int player)
     {
-        _goPoint = true;
         Transform nextPoint = GetNextPoint(throwResult, player);
 
-        Debug.Log(player + " " + nextPoint);
-        _statusPlayer.ElementAt(player).Key.GetComponent<PersonMove>().Move(nextPoint);
+        // Debug.Log(player + " " + nextPoint);
+        _playerHash = _statusPlayer.ElementAt(player).Key.GetComponent<PersonMove>();
+        _playerHash.ReachedPoint = false; //переделать
+        _goPoint = true;
+        _playerHash.Move(nextPoint);
     }
 
     private Transform GetNextPoint(int throwResult, int player)
@@ -159,9 +165,26 @@ public class ChangerPlayers : MonoBehaviour
     }
     private void ActiveNextPlayer()
     {
+
         _goPoint = false;
         _playerHash = null;
         ChangeActivePlayer();
+
+        StaticDataPlayers player = _staticDataPlayer.ForPlayer(_activePlayer.Compare());
+        Debug.Log(player.Prefab);
+        PlayerIsActive?.Invoke(player);
+
         TransferOfPlay();
+    }
+}
+
+
+
+
+public static class ExtensionCompareIntAndEnum
+{
+    public static Players Compare(this int value)
+    {
+        return (Players)value;
     }
 }

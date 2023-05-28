@@ -34,6 +34,7 @@ public class PersonMove : MonoBehaviour
         {
             _agent.SetDestination(_pointAchive.position);
             ReachedPoint = DistanceToPoint();
+
         }
     }
 

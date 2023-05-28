@@ -1,7 +1,7 @@
 ﻿public enum Players
 {
-    first,
-    second,
-    third,
-    fourth
+    Boy,
+    Girl,
+    Mother,
+    Father
 };

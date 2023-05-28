@@ -23,7 +23,15 @@ public class BootStrapState : IState
 
     private void RegisterService()
     {
-        _serviceLocator.RegisterService<IGameFactoryService>(new GameFactory());
+        RegisterStaticData();
+        _serviceLocator.RegisterService<IGameFactoryService>(new GameFactory(_serviceLocator.GetService<IStaticDataService>()));
+    }
+
+    private void RegisterStaticData()
+    {
+        IStaticDataService staticData = new StaticDataService();
+        staticData.LoadPlayers();
+        _serviceLocator.RegisterService<IStaticDataService>(staticData);
     }
 
     public void Exit()
