@@ -82,6 +82,7 @@ public class ChangerPlayers : MonoBehaviour
         }
 
         TransferOfPlay();
+        SendDataPlayer();
     }
 
     private int TransferOfPlay()
@@ -169,12 +170,15 @@ public class ChangerPlayers : MonoBehaviour
         _goPoint = false;
         _playerHash = null;
         ChangeActivePlayer();
-
-        StaticDataPlayers player = _staticDataPlayer.ForPlayer(_activePlayer.Compare());
-        Debug.Log(player.Prefab);
-        PlayerIsActive?.Invoke(player);
+        SendDataPlayer();
 
         TransferOfPlay();
+    }
+
+    private void SendDataPlayer()
+    {
+        StaticDataPlayers player = _staticDataPlayer.ForPlayer(_activePlayer.Compare());
+        PlayerIsActive?.Invoke(player);
     }
 }
 

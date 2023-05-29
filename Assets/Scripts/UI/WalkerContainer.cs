@@ -9,6 +9,8 @@ public class WalkerContainer : MonoBehaviour
 {
     public static event Action SaidThrowGameCubeForReferee;
 
+    private static readonly int Show = Animator.StringToHash("Show");
+    private static readonly int Hide = Animator.StringToHash("Hide");
     [SerializeField]
     private CanvasGroup _canvas;
 
@@ -18,21 +20,25 @@ public class WalkerContainer : MonoBehaviour
     [SerializeField]
     private Button _buttonGiveMoving;
 
+    [SerializeField]
+    private Animator _animator;
+
+
+
     private void Awake()
     {
         ChangerPlayers.PlayerIsActive += CanvasActive;
-
     }
 
     public void SayToThrowGameCube()
     {
-        _canvas.alpha = 0;
         SaidThrowGameCubeForReferee?.Invoke();
+        _animator.SetTrigger(Hide);
     }
 
     private void CanvasActive(StaticDataPlayers player)
     {
-        _canvas.alpha = 1;
         _imagePlayer.sprite = player.Icon;
+        _animator.SetTrigger(Show);
     }
 }
