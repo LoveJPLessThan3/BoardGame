@@ -403,7 +403,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6100929040671771800
 PrefabInstance:
@@ -417,10 +417,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameBootstrap
       objectReference: {fileID: 0}
+    - target: {fileID: 6100929040710343536, guid: fd5c91868a1a8ba4db6959b2113f61bc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6100929040710343537, guid: fd5c91868a1a8ba4db6959b2113f61bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6100929040710343537, guid: fd5c91868a1a8ba4db6959b2113f61bc,
         type: 3}
