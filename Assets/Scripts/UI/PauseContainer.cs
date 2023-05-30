@@ -14,7 +14,7 @@ public class PauseContainer : MonoBehaviour
 
     public void ResumeGameClick()
     {
-        Debug.Log(222);
+        Time.timeScale = 1f;
         _pauseGame.gameObject.SetActive(true);
         _walkerConteiner.alpha = 1;
         _pauseCanvas.gameObject.SetActive(false);

@@ -38,8 +38,8 @@ public class GameFactory : IGameFactoryService
     {
         ListPlayers = new List<GameObject>();
 
-        ListPlayers.Add(CreatePlayer(Players.Boy));
-        ListPlayers.Add(CreatePlayer(Players.Girl));
+        ListPlayers.Add(CreatePlayer(Players.First));
+        ListPlayers.Add(CreatePlayer(Players.Second));
 
 
         CreatedObjects?.Invoke();

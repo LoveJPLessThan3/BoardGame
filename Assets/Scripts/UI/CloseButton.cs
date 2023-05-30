@@ -15,6 +15,7 @@ public class CloseButton : MonoBehaviour
     {
         _canvasPause.gameObject.SetActive(true);
         _walkerConteiner.alpha = 0;
+        Time.timeScale = 0f;
         _button.gameObject.SetActive(false);
     }
 }

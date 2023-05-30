@@ -61,3 +61,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pointsList: {fileID: 4327608881877226286, guid: f26823103ce41ce46b22e45783f0c356,
     type: 3}
+  _cameraMoveTarget: {fileID: 4083914672691243999, guid: a45176583a4aa8d41b5ea2e34d540471,
+    type: 3}
