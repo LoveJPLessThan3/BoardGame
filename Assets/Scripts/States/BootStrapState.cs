@@ -18,7 +18,7 @@ public class BootStrapState : IState
     {
 
 
-        _stateMachine.EnterState<LoadSceneState>();
+        _stateMachine.EnterState<LoadMenuSceneState>();
     }
 
     private void RegisterService()

@@ -14,6 +14,7 @@ public class ChangerPlayers : MonoBehaviour
 
     private const string RedPointTag = "RedPoint";
     private const string GreenPointTag = "GreenPoint";
+    private const string FinishPointTag = "FinishPoint";
 
     [SerializeField]
     private GameObject _pointsList;
@@ -27,6 +28,7 @@ public class ChangerPlayers : MonoBehaviour
     private ParticleSystem _particleWin;
 
     private PlayersManager _playersManager;
+    private FinishHandler _finishHandler;
     private IStaticDataService _staticDataPlayer;
 
     private Dictionary<GameObject, Transform> _statusPlayer = new Dictionary<GameObject, Transform>();
@@ -38,11 +40,14 @@ public class ChangerPlayers : MonoBehaviour
     private string _tag;
     private int _activePlayer;
     private bool _goPoint;
+    private bool _flag;
 
     private void Awake()
     {
         _staticDataPlayer = ServiceLocator.Instantiate.GetService<IStaticDataService>();
         WalkerContainer.SaidThrowGameCubeForReferee += ThrowGameCube;
+
+        _finishHandler = GetComponent<FinishHandler>();
     }
 
     private void LateUpdate()
@@ -55,18 +60,22 @@ public class ChangerPlayers : MonoBehaviour
             {
                 if (_goPoint)
                 {
-
                     if (_tag.Equals(RedPointTag))
                         RedPoint(_activePlayer);
                     else if (_tag.Equals(GreenPointTag))
                         GreenPoint(_activePlayer);
-                    else if (_tag.Equals("FinishPoint"))
+                    else if (_tag.Equals(FinishPointTag))
                         FinishPoint(_activePlayer);
                     else NeutralPoint();
 
                 }
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+        WalkerContainer.SaidThrowGameCubeForReferee -= ThrowGameCube;
     }
 
     private void ThrowGameCube()
@@ -118,21 +127,16 @@ public class ChangerPlayers : MonoBehaviour
     private void OrderToWalk(int throwResult, int player)
     {
         MoveNextPoint(throwResult, player);
-
-        //Кэшируем плээера, чтобы затем взять у него свойство достижения клетки
-        
     }
 
     private void MoveNextPoint(int throwResult, int player)
     {
         _nextPoint = GetNextPoint(throwResult, player);
+        _flag = true;
 
-        
-        _playerHash = _statusPlayer.ElementAt(player).Key.GetComponent<PlayerMove>();
         _playerHash.Animator.PlayWalk();
         _cameraMoveTarget.ObesrveTarget(_playerHash.transform);
 
-      //  _playerHash.ReachedPoint = false; //переделать
         _goPoint = true;
         _playerHash.Move(_nextPoint);
     }
@@ -155,6 +159,7 @@ public class ChangerPlayers : MonoBehaviour
 
         return list.listPoints[_plyerPointPlace[player]];
     }
+
     private string GetTag(int throwResult) =>
         _pointList.listPoints[throwResult].transform.parent.GetChild(throwResult).tag;
 
@@ -164,7 +169,6 @@ public class ChangerPlayers : MonoBehaviour
         _goPoint = false;
         MoveNextPoint(-3, player);
     }
-
 
     private void GreenPoint(int player)
     {
@@ -182,7 +186,8 @@ public class ChangerPlayers : MonoBehaviour
 
     private void FinishPoint(int activePlayer)
     {
-       // _statusPlayer.Remove(_statusPlayer.ElementAt(activePlayer).Key);
+        _finishHandler.FinishReached();
+        _playerHash.Animator.PlayWin();
     }
 
     private void NeutralPoint()
@@ -203,7 +208,7 @@ public class ChangerPlayers : MonoBehaviour
 
     private void SendDataPlayer()
     {
-        StaticDataPlayers player = _staticDataPlayer.ForPlayer(_activePlayer.Compare());
+        StaticDataPlayers player = _staticDataPlayer.ForPlayer(_activePlayer.CompareWithEnum());
         PlayerIsActive?.Invoke(player);
     }
 }
@@ -213,7 +218,7 @@ public class ChangerPlayers : MonoBehaviour
 
 public static class ExtensionCompareIntAndEnum
 {
-    public static Players Compare(this int value)
+    public static Players CompareWithEnum(this int value)
     {
         return (Players)value;
     }

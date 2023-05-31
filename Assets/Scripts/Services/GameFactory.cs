@@ -38,8 +38,11 @@ public class GameFactory : IGameFactoryService
     {
         ListPlayers = new List<GameObject>();
 
-        ListPlayers.Add(CreatePlayer(Players.First));
-        ListPlayers.Add(CreatePlayer(Players.Second));
+        for (int player = 0; player < playersValue; player++)
+        {
+            ListPlayers.Add(CreatePlayer(player.CompareWithEnum()));
+
+        }
 
 
         CreatedObjects?.Invoke();

@@ -18,6 +18,12 @@ public class PlayersManager : MonoBehaviour
 
     }
 
+    private void OnDestroy()
+    {
+        GameFactory.CreatedObjects -= CreatedPlayers;
+
+    }
+
     private void CreatedPlayers()
     {
         var playersList = ServiceLocator.Instantiate.GetService<IGameFactoryService>().ListPlayers;

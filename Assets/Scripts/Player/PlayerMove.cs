@@ -38,14 +38,12 @@ public class PlayerMove : MonoBehaviour
         {
             _agent.SetDestination(_pointAchive.position);
             ReachedPoint = DistanceToPoint();
-
         }
     }
 
-    public Transform Move(Transform nextPoint)
-    {
-        return _pointAchive = nextPoint;
-    }
+    public Transform Move(Transform nextPoint) =>
+        _pointAchive = nextPoint;
+
     public bool DistanceToPoint()
     {
         if (!_agent.pathPending)

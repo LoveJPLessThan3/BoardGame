@@ -4,35 +4,41 @@ using System.Collections.Generic;
 public class StateMachine
 {
     private SceneLoader _sceneLoader;
-    private Dictionary<Type, IState> _states;
+    private Dictionary<Type, IExitableState> _states;
 
-    private IState _activeState;
+    private IExitableState _activeState;
 
     public StateMachine(SceneLoader sceneLoader)
     {
         _sceneLoader = sceneLoader;
 
-        _states = new Dictionary<Type, IState>()
+        _states = new Dictionary<Type, IExitableState>()
         {
             [typeof(BootStrapState)] = new BootStrapState(this),
-            [typeof(LoadSceneState)] = new LoadSceneState(this, _sceneLoader, ServiceLocator.Instantiate.GetService<IGameFactoryService>()),
+            [typeof(LoadMainSceneState)] = new LoadMainSceneState(this, _sceneLoader, ServiceLocator.Instantiate.GetService<IGameFactoryService>()),
+            [typeof(LoadMenuSceneState)] = new LoadMenuSceneState(this, _sceneLoader),
         };
     }
 
-    public void EnterState<TState>() where TState : class,IState
+    public void EnterState<TState>() where TState : class, IState
     {
         IState state = ChangeState<TState>();
         state.Enter();
     }
 
-    private IState ChangeState<TState>() where TState : class,IState
+    public void EnterState<TState, TPayLoad>(TPayLoad payLoad) where TState : class, IPayLoadedState<TPayLoad>
+    {
+
+        IPayLoadedState<TPayLoad> state = ChangeState<TState>();
+        state.Enter(payLoad);
+    }
+    private TState ChangeState<TState>() where TState : class, IExitableState
     {
         _activeState?.Exit();
         TState state = GetState<TState>();
         _activeState = state;
         return state;
     }
-
-    private TState GetState<TState>() where TState : class, IState =>
+    private TState GetState<TState>() where TState : class, IExitableState =>
         _states[typeof(TState)] as TState;
 }

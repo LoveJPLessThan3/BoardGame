@@ -30,6 +30,11 @@ public class WalkerContainer : MonoBehaviour
         ChangerPlayers.PlayerIsActive += CanvasActive;
     }
 
+    private void OnDestroy()
+    {
+        ChangerPlayers.PlayerIsActive -= CanvasActive;
+    }
+
     public void SayToThrowGameCube()
     {
         SaidThrowGameCubeForReferee?.Invoke();

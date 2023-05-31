@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class GameBootstrap : MonoBehaviour, ICourutineRunner
 {
-    private Game _game;
+    public Game _game;
     private void Awake()
     {
         _game = new Game(this);
 
-
         _game.StateMachine.EnterState<BootStrapState>();
         DontDestroyOnLoad(this);
     }
+
 }
