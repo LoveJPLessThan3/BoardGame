@@ -1,15 +1,11 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-//using System.Numerics;
-using UnityEditor.Search;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayersManager))]
 public class ChangerPlayers : MonoBehaviour
 {
-
     public static event Action<StaticDataPlayers> PlayerIsActive;
 
     private const string RedPointTag = "RedPoint";
@@ -34,13 +30,12 @@ public class ChangerPlayers : MonoBehaviour
     private Dictionary<GameObject, Transform> _statusPlayer = new Dictionary<GameObject, Transform>();
     private List<int> _plyerPointPlace = new List<int>();
     private PointsList _pointList;
-    private PlayerMove _playerHash;
+    private PlayerMove _playerСache;
     private Transform _nextPoint;
 
     private string _tag;
     private int _activePlayer;
     private bool _goPoint;
-    private bool _flag;
 
     private void Awake()
     {
@@ -52,11 +47,11 @@ public class ChangerPlayers : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (!_playerHash)
+        if (!_playerСache)
             return;
         else
         {
-            if (_playerHash.ReachedPoint)
+            if (_playerСache.ReachedPoint)
             {
                 if (_goPoint)
                 {
@@ -84,13 +79,14 @@ public class ChangerPlayers : MonoBehaviour
         OrderToWalk(RollCube.Instance().ThrowCube(), _activePlayer);
     }
 
+    //принимаем с явной зависимостью игроков и поинты по которым они будут ходить
     public void AddPlayer(PlayersManager playerManager, PointsList pointsList)
     {
         _playersManager = playerManager;
         _pointList = pointsList;
         InitialPlayersStart();
     }
-    //Инициализируем игроков у "рефери"
+    //Инициализируем игроков. Структура данных - словарь. key - игрок, value - поинт, на котором он стоит
     private void InitialPlayersStart()
     {
         foreach (var player in _playersManager.Players)
@@ -110,19 +106,20 @@ public class ChangerPlayers : MonoBehaviour
             player.Key.GetComponent<PlayerMove>().enabled = false;
         }
         _statusPlayer.ElementAt(_activePlayer).Key.GetComponent<PlayerMove>().enabled = true;
-        _playerHash = _statusPlayer.ElementAt(_activePlayer).Key.GetComponent<PlayerMove>();
+        _playerСache = _statusPlayer.ElementAt(_activePlayer).Key.GetComponent<PlayerMove>();
 
-        _cameraMoveTarget.ObesrveTarget(_playerHash.transform);
+        _cameraMoveTarget.ObesrveTarget(_playerСache.transform);
 
         return _activePlayer;
-
     }
+
     private void ChangeActivePlayer()
     {
         _activePlayer++;
         if (_activePlayer > _playersManager.Players.Count - 1)
             _activePlayer = 0;
     }
+
     //Отдаем команду игроку ходить и куда ходить.
     private void OrderToWalk(int throwResult, int player)
     {
@@ -132,13 +129,12 @@ public class ChangerPlayers : MonoBehaviour
     private void MoveNextPoint(int throwResult, int player)
     {
         _nextPoint = GetNextPoint(throwResult, player);
-        _flag = true;
 
-        _playerHash.Animator.PlayWalk();
-        _cameraMoveTarget.ObesrveTarget(_playerHash.transform);
+        _playerСache.Animator.PlayWalk();
+        _cameraMoveTarget.ObesrveTarget(_playerСache.transform);
 
         _goPoint = true;
-        _playerHash.Move(_nextPoint);
+        _playerСache.Move(_nextPoint);
     }
 
     private Transform GetNextPoint(int throwResult, int player)
@@ -187,19 +183,21 @@ public class ChangerPlayers : MonoBehaviour
     private void FinishPoint(int activePlayer)
     {
         _finishHandler.FinishReached();
-        _playerHash.Animator.PlayWin();
+        _playerСache.Animator.PlayWin();
     }
 
     private void NeutralPoint()
     {
         ActiveNextPlayer();
     }
+
     private void ActiveNextPlayer()
     {
-        //не доходит
-        _playerHash.Animator.PlayIdle();
+        _playerСache.Animator.PlayIdle();
+
         _goPoint = false;
-        _playerHash = null;
+        _playerСache = null;
+
         ChangeActivePlayer();
         SendDataPlayer();
 
@@ -210,16 +208,5 @@ public class ChangerPlayers : MonoBehaviour
     {
         StaticDataPlayers player = _staticDataPlayer.ForPlayer(_activePlayer.CompareWithEnum());
         PlayerIsActive?.Invoke(player);
-    }
-}
-
-
-
-
-public static class ExtensionCompareIntAndEnum
-{
-    public static Players CompareWithEnum(this int value)
-    {
-        return (Players)value;
     }
 }

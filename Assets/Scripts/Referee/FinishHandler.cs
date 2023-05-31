@@ -8,8 +8,6 @@ public class FinishHandler : MonoBehaviour
     private ParticleSystem _firstParticle;
     [SerializeField]
     private ParticleSystem _secondParticle;
-    [SerializeField]
-    private GameObject _crown;
 
     public void FinishReached()
     {

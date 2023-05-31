@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class AnimatorPlayer : MonoBehaviour
 {
-
     private static int Walk = Animator.StringToHash("Walk");
     private static int Idle = Animator.StringToHash("Idle");
     private static int Win = Animator.StringToHash("Win");
 
     private Animator _animator;
 
-    private void Awake()
-    {
+    private void Awake() => 
         _animator = GetComponent<Animator>();
-    }
 
     public void PlayIdle() =>
         _animator.SetTrigger(Idle);

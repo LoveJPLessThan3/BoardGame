@@ -10,19 +10,15 @@ public class PlayersManager : MonoBehaviour
     private PointsList _pointList;
     private ChangerPlayers _changerPlayers;
     
-
     private void Awake()
     {
-        GameFactory.CreatedObjects += CreatedPlayers;
         _changerPlayers = gameObject.GetComponent<ChangerPlayers>();
 
+        GameFactory.CreatedObjects += CreatedPlayers;
     }
 
-    private void OnDestroy()
-    {
+    private void OnDestroy() => 
         GameFactory.CreatedObjects -= CreatedPlayers;
-
-    }
 
     private void CreatedPlayers()
     {
@@ -34,6 +30,4 @@ public class PlayersManager : MonoBehaviour
 
         _changerPlayers.AddPlayer(this, _pointList);
     }
-
-
 }

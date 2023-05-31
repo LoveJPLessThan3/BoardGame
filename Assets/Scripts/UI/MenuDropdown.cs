@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class MenuDropdown : MonoBehaviour
 {
     public int NumberOfPlayers { get; private set; }
+
     private void Awake()
     {
         NumberOfPlayers = 4;
     }
+
     public void HandleInputData(int val)
     {
         NumberOfPlayers = val + 2;

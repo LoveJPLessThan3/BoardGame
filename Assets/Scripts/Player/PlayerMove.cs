@@ -1,13 +1,11 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
 using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(GetStartPoint))]
-public class PlayerMove : MonoBehaviour
+public class PlayerMove : MonoBehaviour                      //Плээер не знает куда ему ходить, до того момента, пока ему не сообщат.
 {
+    public AnimatorPlayer Animator { get; private set; }
+
     public bool ReachedPoint { get; set; }
 
     [SerializeField]
@@ -15,12 +13,7 @@ public class PlayerMove : MonoBehaviour
 
     private Transform _pointAchive;
     private NavMeshAgent _agent;
-    public AnimatorPlayer Animator { get; private set; }
-
-    private bool _isMove;
-
-
-
+   
     private void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();

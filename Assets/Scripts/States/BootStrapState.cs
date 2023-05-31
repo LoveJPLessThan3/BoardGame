@@ -1,7 +1,4 @@
-﻿using System;
-using UnityEngine;
-
-public class BootStrapState : IState
+﻿public class BootStrapState : IState
 {
     private readonly StateMachine _stateMachine;
     private readonly ServiceLocator _serviceLocator;
@@ -14,12 +11,8 @@ public class BootStrapState : IState
         RegisterService();
     }
 
-    public void Enter()
-    {
-
-
+    public void Enter() => 
         _stateMachine.EnterState<LoadMenuSceneState>();
-    }
 
     private void RegisterService()
     {

@@ -10,6 +10,7 @@ TagManager:
   - Players
   - Finish Point
   - FinishPoint
+  - GameBootstrap
   layers:
   - Default
   - TransparentFX

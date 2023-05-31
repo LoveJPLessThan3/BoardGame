@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1371882443031221227}
   - component: {fileID: 1371882443031221225}
   - component: {fileID: -3702128726456045887}
+  - component: {fileID: 3703697017414847745}
   m_Layer: 0
   m_Name: Referi
   m_TagString: Untagged
@@ -61,5 +62,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pointsList: {fileID: 4327608881877226286, guid: f26823103ce41ce46b22e45783f0c356,
     type: 3}
-  _cameraMoveTarget: {fileID: 4083914672691243999, guid: a45176583a4aa8d41b5ea2e34d540471,
+  _cameraMoveTarget: {fileID: 0}
+  _particleRed: {fileID: 1917871634006376450, guid: 07a86735091fb7e45bf49b0fe1b6930e,
     type: 3}
+  _particleGreen: {fileID: 1896805288510032016, guid: 17ea2dfb78326fc4ca35a8af04ccd6bb,
+    type: 3}
+  _particleWin: {fileID: 0}
+--- !u!114 &3703697017414847745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371882443031221224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61fd4d89f7ecf794d8d40a5692d7ad89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _firstParticle: {fileID: 0}
+  _secondParticle: {fileID: 0}

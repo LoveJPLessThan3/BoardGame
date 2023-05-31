@@ -1,12 +1,15 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameBootstrap : MonoBehaviour, ICourutineRunner
 {
-    public Game _game;
+    private Game _game;
+
+    [SerializeField]
+    private LoadingCurtain _curtain;
+
     private void Awake()
     {
-        _game = new Game(this);
+        _game = new Game(this, _curtain);
 
         _game.StateMachine.EnterState<BootStrapState>();
         DontDestroyOnLoad(this);

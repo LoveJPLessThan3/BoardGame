@@ -1,8 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class WalkerContainer : MonoBehaviour
@@ -11,19 +8,15 @@ public class WalkerContainer : MonoBehaviour
 
     private static readonly int Show = Animator.StringToHash("Show");
     private static readonly int Hide = Animator.StringToHash("Hide");
+
     [SerializeField]
     private CanvasGroup _canvas;
-
     [SerializeField]
     private Image _imagePlayer;
-
     [SerializeField]
     private Button _buttonGiveMoving;
-
     [SerializeField]
     private Animator _animator;
-
-
 
     private void Awake()
     {
@@ -35,12 +28,14 @@ public class WalkerContainer : MonoBehaviour
         ChangerPlayers.PlayerIsActive -= CanvasActive;
     }
 
+    //кнопка триггерит бросок кубика
     public void SayToThrowGameCube()
     {
         SaidThrowGameCubeForReferee?.Invoke();
         _animator.SetTrigger(Hide);
     }
 
+    //устанавливаем иконку активного плэеера
     private void CanvasActive(StaticDataPlayers player)
     {
         _imagePlayer.sprite = player.Icon;

@@ -8,15 +8,15 @@ public class StateMachine
 
     private IExitableState _activeState;
 
-    public StateMachine(SceneLoader sceneLoader)
+    public StateMachine(SceneLoader sceneLoader, LoadingCurtain curtain)
     {
         _sceneLoader = sceneLoader;
 
         _states = new Dictionary<Type, IExitableState>()
         {
             [typeof(BootStrapState)] = new BootStrapState(this),
-            [typeof(LoadMainSceneState)] = new LoadMainSceneState(this, _sceneLoader, ServiceLocator.Instantiate.GetService<IGameFactoryService>()),
-            [typeof(LoadMenuSceneState)] = new LoadMenuSceneState(this, _sceneLoader),
+            [typeof(LoadMainSceneState)] = new LoadMainSceneState(this, _sceneLoader, ServiceLocator.Instantiate.GetService<IGameFactoryService>(), curtain),
+            [typeof(LoadMenuSceneState)] = new LoadMenuSceneState(this, _sceneLoader, curtain),
         };
     }
 

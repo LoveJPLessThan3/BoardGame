@@ -11,7 +11,7 @@ public class PointsList : MonoBehaviour
     {
         listPoints = new List<Transform>();
 
-        foreach (Transform item in gameObject.transform.GetComponentInChildren<Transform>())
-            listPoints.Add(item);
+        foreach (Transform point in gameObject.transform.GetComponentInChildren<Transform>())
+            listPoints.Add(point);
     }
 }
