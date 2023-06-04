@@ -17,15 +17,13 @@
 
     public void Enter(int valuePlayers)
     {
-        _curtain.Show();
         _valuePlayers = valuePlayers;
         _sceneLoader.Load("MainScene", CreateObjects);
         _curtain.Hide();
     }
 
-    public void Exit()
-    {
-    }
+    public void Exit() => 
+        _curtain.Show();
 
     private void CreateObjects()
     {
@@ -33,8 +31,6 @@
         _gameFactory.CreatePlayers(_valuePlayers);
     }
 
-    private void LoadMenuSceneState()
-    {
+    private void LoadMenuSceneState() => 
         _stateMachine.EnterState<LoadMenuSceneState>();
-    }
 }

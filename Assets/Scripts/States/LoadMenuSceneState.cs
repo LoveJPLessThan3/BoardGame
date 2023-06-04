@@ -14,15 +14,13 @@
 
     public void Enter()
     {
-        _curtain.Show();
         _sceneLoader.Load("MenuScene");
         _curtain.Hide();
     }
 
-    private void LoadMainSeneState(int playersValue) => 
-        _stateMachine.EnterState<LoadMainSceneState, int>(playersValue);
+    public void Exit() => 
+        _curtain.Show();
 
-    public void Exit()
-    {
-    }
+    private void LoadMainSeneState(int playersValue) =>
+        _stateMachine.EnterState<LoadMainSceneState, int>(playersValue);
 }
